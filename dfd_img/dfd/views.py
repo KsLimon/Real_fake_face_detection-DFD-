@@ -15,7 +15,7 @@ import pathlib
 import glob
 import cv2
 
-classes = ['FAKE_FAKE', 'REAL_REAL']
+classes = ['FAKE!!', 'REAL!!']
 
 class network(nn.Module):
     def __init__(self):
@@ -154,6 +154,6 @@ def home(request):
 
         args = {'pred':pred}
 
-        return redirect("home")
+        #return redirect("home")
 
     return render(request, "home.html", args)
