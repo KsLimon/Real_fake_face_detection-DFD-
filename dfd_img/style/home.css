@@ -103,7 +103,7 @@
     padding: 15px 120px;
     cursor: pointer;
     transition: 0.5s;
-    background-color: rgb(211, 90, 147);;
+    background-color: rgb(211, 90, 147);
 
 }
 .my_file::-webkit-file-upload-button{
