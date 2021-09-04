@@ -1,4 +1,4 @@
-# Real_fake_face_detection-DFD-
+# Real fake face detection (DFD)
 It's my very own project help of Kaggle, GitHub, and some other online resources.
 Thank You
 
