@@ -1,5 +1,6 @@
 # Real_fake_face_detection-DFD-
-It's very own project with help of kaggle, github and some other online resources. Thank You
+It's my very own project help of Kaggle, GitHub, and some other online resources.
+Thank You
 
 # Screenshot of a successful feedback
 ![proview](https://user-images.githubusercontent.com/59681131/132087771-e9175bcf-d753-4786-8ada-3f37bfe24200.png)
