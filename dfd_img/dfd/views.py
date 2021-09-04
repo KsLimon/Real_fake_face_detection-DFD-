@@ -98,39 +98,14 @@ transformer=transforms.Compose([
 ])
 
 
-# image = Image.open("/home/kslimon/Projects/Real_fake_face_detection-DFD-/dfd_img/style/nn.jpg")
-
-# def prediction(image,transformer):
-    
-#     # image=Image.open(img_path)
-    
-#     image_tensor=transformer(image).float()
-    
-    
-#     image_tensor=image_tensor.unsqueeze_(0)
-    
-#     if torch.cuda.is_available():
-#         image_tensor.cuda()
-        
-#     input=Variable(image_tensor)
-    
-    
-#     output=model(input)
-    
-#     index=output.data.numpy().argmax()
-    
-#     pred=classes[index]
-    
-#     return pred
-
-
-
-def home(request):
-    args = {}
+def base(request):
+    args={}
 
     if "btn3" in request.POST:
+    # if request.method == "POST":
 
-        image = request.FILES['img']
+        image = request.FILES.get('img')
+        print(image)
 
         image = Image.open(image)
         image_tensor=transformer(image).float()
@@ -152,8 +127,11 @@ def home(request):
 
         print(pred)
 
-        args = {'pred':pred}
+        args['dlog']='Here you go its-'
 
-        #return redirect("home")
+        args['pred'] = pred
 
-    return render(request, "home.html", args)
+        # return redirect("home")
+
+    return render(request, "base.html", args)
+
